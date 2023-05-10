@@ -3,3 +3,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.myAddBtn{
+    @apply px-4 py-2 bg-secondary font-medium text-slate-50 rounded-md border-2 border-secondary
+}
+.inputField{
+    @apply py-2 px-3 rounded-md placeholder:font-medium
+}
+.myBtn{
+    @apply bg-gradient-to-r from-[#77432026] to-[#E8C58026] px-3 py-3
+}
