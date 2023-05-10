@@ -19,7 +19,7 @@ const SingleChocolate = ({ chocolate, chocolates, setChocolates }) => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch(`http://localhost:5000/chocolates/${_id}`, {
+                fetch(`https://chocolate-management-server-lovat.vercel.app/chocolates/${_id}`, {
                     method: "DELETE"
                 })
                     .then(res => res.json())

@@ -14,7 +14,7 @@ const AddChocolate = () => {
         const photo = form.photo.value;
         const newChocolate = {name, country, category, photo};
         console.log(newChocolate);
-        fetch("http://localhost:5000/chocolates",{
+        fetch("https://chocolate-management-server-lovat.vercel.app/chocolates",{
             method:"POST",
             headers:{
                 "content-type" : "application/json"

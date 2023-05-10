@@ -9,7 +9,7 @@ const UpdateChocolate = () => {
     const { _id, name, country, category, photo } = chocolate;
    
     const handleUpdateChocolate = e =>{
-        e.preventDefault;
+        e.preventDefault();
 
         const form = e.target;
 
@@ -20,7 +20,7 @@ const UpdateChocolate = () => {
 
         const updatedChocolate = {  name, country, category, photo }
 
-        fetch(`http://localhost:5000/chocolates/${_id}`,{
+        fetch(`https://chocolate-management-server-lovat.vercel.app/chocolates/${_id}`,{
             method:"PUT",
             headers:{
                 "content-type" : "application/json"
@@ -29,7 +29,7 @@ const UpdateChocolate = () => {
         })
         .then(res=>res.json())
         .then(data=>{
-            console.log(data);
+            // console.log(data);
             if(data.modifiedCount > 0){
                 
                 Swal.fire(

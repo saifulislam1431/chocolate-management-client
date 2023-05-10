@@ -14,7 +14,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home></Home>,
-    loader: ()=> fetch("http://localhost:5000/chocolates")
+    loader: ()=> fetch("https://chocolate-management-server-lovat.vercel.app/chocolates")
   },
   {
     path:"/addChocolate",
@@ -23,7 +23,7 @@ const router = createBrowserRouter([
   {
     path: "/updateChocolate/:id",
     element:<UpdateChocolate></UpdateChocolate>,
-    loader: ({params}) => fetch(`http://localhost:5000/chocolates/${params.id}`)
+    loader: ({params}) => fetch(`https://chocolate-management-server-lovat.vercel.app/chocolates/${params.id}`)
   }
 ]);
 
